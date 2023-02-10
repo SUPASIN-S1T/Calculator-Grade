@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColor: #0e1217;
+    --colorCard: #ce3df3;
+    --colorWhite: #fff;
+}
+
+html {
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-container {
+    width: 400px;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--colorCard);
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+
+.card-container h1 {
+    color: var(--colorWhite);
+    font-size: 2rem;
+}
+
+.card-container .input-card {
+    width: 80%;
+    font-family: inherit;
+    padding: 0.5rem 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 5px auto;
+}
+
+.card-container .result {
+    font-weight: bolder;
+    color: var(--colorWhite);
+    margin: 10px auto;
+}
+
+
+
+.success {
+    color: #00FF00 !important;
+    transition: all 0.5s ease-in;
+}
+
+.warning {
+    color: #f5a000 !important;
+    transition: all 0.5s ease-in;
+}
+
+.danger {
+    color: red !important;
+    transition: all 0.5s ease-in;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 1.5rem;
+    }
+}
